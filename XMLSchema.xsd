@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Biblioteka">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Korisnik">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:integer"/>
+							<xs:element name="OIB" type="xs:integer"/>
+							<xs:element name="Ime" type="xs:string"/>
+							<xs:element name="Prezime" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Knjiga">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:integer"/>
+							<xs:element name="Naziv" type="xs:string"/>
+							<xs:element name="Autor" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Posudba">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IDKnjige" type="xs:integer"/>
+							<xs:element name="IDKorisnika" type="xs:integer"/>
+							<xs:element name="DatumPosudbe" type="xs:date"/>
+							<xs:element name="DatumVracanja" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Stanje">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IDKnjige" type="xs:integer"/>
+							<xs:element name="Kolicina" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
