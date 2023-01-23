@@ -37,6 +37,13 @@
             this.NazivKnjige = new System.Windows.Forms.TextBox();
             this.ISBNKnjige = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.textBoxNaziv = new System.Windows.Forms.TextBox();
+            this.textBoxAutor = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.buttonUnesi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UnosButun
@@ -107,12 +114,78 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "ISBN";
             // 
+            // textBoxID
+            // 
+            this.textBoxID.Location = new System.Drawing.Point(52, 12);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.TabIndex = 0;
+            // 
+            // textBoxNaziv
+            // 
+            this.textBoxNaziv.Location = new System.Drawing.Point(52, 51);
+            this.textBoxNaziv.Name = "textBoxNaziv";
+            this.textBoxNaziv.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNaziv.TabIndex = 1;
+            // 
+            // textBoxAutor
+            // 
+            this.textBoxAutor.Location = new System.Drawing.Point(52, 95);
+            this.textBoxAutor.Name = "textBoxAutor";
+            this.textBoxAutor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAutor.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "ID";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 58);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Naziv";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Autor";
+            // 
+            // buttonUnesi
+            // 
+            this.buttonUnesi.Location = new System.Drawing.Point(52, 143);
+            this.buttonUnesi.Name = "buttonUnesi";
+            this.buttonUnesi.Size = new System.Drawing.Size(100, 23);
+            this.buttonUnesi.TabIndex = 6;
+            this.buttonUnesi.Text = "Unesi";
+            this.buttonUnesi.UseVisualStyleBackColor = true;
+            this.buttonUnesi.Click += new System.EventHandler(this.buttonUnesi_Click);
+            // 
             // UpisKnjige
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(169, 184);
+            this.Controls.Add(this.buttonUnesi);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxAutor);
+            this.Controls.Add(this.textBoxNaziv);
+            this.Controls.Add(this.textBoxID);
             this.Name = "UpisKnjige";
             this.Load += new System.EventHandler(this.UpisKnjige_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,5 +200,12 @@
         private System.Windows.Forms.TextBox NazivKnjige;
         private System.Windows.Forms.TextBox ISBNKnjige;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxID;
+        private System.Windows.Forms.TextBox textBoxNaziv;
+        private System.Windows.Forms.TextBox textBoxAutor;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonUnesi;
     }
 }

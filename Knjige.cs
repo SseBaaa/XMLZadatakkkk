@@ -8,17 +8,18 @@ namespace AplikacijaZaBiblioteku
 {
     internal class Knjige
     {
-        public Knjige(int iD, string naziv, string autor, int kolicina)
+        int ID;
+        string Naziv, Autor;
+
+        public Knjige(int iD, string naziv, string autor)
         {
             ID = iD;
             Naziv = naziv;
             Autor = autor;
-            this.kolicina = kolicina;
         }
 
-        int ID { get; set; }
-        string Naziv { get; set; }
-        string Autor { get; set; }
-        int kolicina { get; set; }
+        public int ID1 { get => ID; set => ID = value; }
+        public string Naziv1 { get => Naziv; set => Naziv = value; }
+        public string Autor1 { get => Autor; set => Autor = value; }
     }
 }
