@@ -24,10 +24,12 @@ namespace AplikacijaZaBiblioteku
             string putttt = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string Fileee = "Korisnici.xml";
             string Fileeee = "Knjige.xml";
+            string File = "Posudba.xml";
             string put = Path.Combine(putttt, Fileee);
             string putt = Path.Combine(putttt, Fileeee);
+            string puttt = Path.Combine(putttt, File);
             PretragaRichTextbox.Clear();
-            if(textBox2.Text != "")
+            /*if(textBox2.Text != "")
             {
                 XDocument doc = XDocument.Load(put);
                 XElement root = doc.Root;
@@ -41,8 +43,21 @@ namespace AplikacijaZaBiblioteku
                 var id = root.Elements("Knjiga").FirstOrDefault(m => m.Element("ID").Value == textBox3.Text);
                 PretragaRichTextbox.AppendText(id.ToString() + Environment.NewLine);
             }
-
-
+            */
+            if (textBox2.Text != "")
+            {
+                XDocument doc = XDocument.Load(puttt);
+                XElement root = doc.Root;
+                var id = root.Elements("Posudba").FirstOrDefault(m => m.Element("ID_Korisnika").Value == textBox2.Text);
+                PretragaRichTextbox.AppendText(id.ToString() + Environment.NewLine);
+            }
+            if (textBox3.Text != "")
+            {
+                XDocument doc = XDocument.Load(puttt);
+                XElement root = doc.Root;
+                var id = root.Elements("Posudba").FirstOrDefault(m => m.Element("ID_knjige").Value == textBox3.Text);
+                PretragaRichTextbox.AppendText(id.ToString() + Environment.NewLine);
+            }
 
 
         }

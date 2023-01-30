@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.ZavrsiButun = new System.Windows.Forms.Button();
-            this.KorisnikCombo = new System.Windows.Forms.ComboBox();
-            this.KnjigaCombo = new System.Windows.Forms.ComboBox();
             this.VracanjeCheck = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxKorisnik = new System.Windows.Forms.TextBox();
+            this.textBoxKnjiga = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ZavrsiButun
@@ -45,22 +46,6 @@
             this.ZavrsiButun.Text = "Ok";
             this.ZavrsiButun.UseVisualStyleBackColor = true;
             this.ZavrsiButun.Click += new System.EventHandler(this.ZavrsiButun_Click);
-            // 
-            // KorisnikCombo
-            // 
-            this.KorisnikCombo.FormattingEnabled = true;
-            this.KorisnikCombo.Location = new System.Drawing.Point(12, 30);
-            this.KorisnikCombo.Name = "KorisnikCombo";
-            this.KorisnikCombo.Size = new System.Drawing.Size(121, 21);
-            this.KorisnikCombo.TabIndex = 1;
-            // 
-            // KnjigaCombo
-            // 
-            this.KnjigaCombo.FormattingEnabled = true;
-            this.KnjigaCombo.Location = new System.Drawing.Point(12, 68);
-            this.KnjigaCombo.Name = "KnjigaCombo";
-            this.KnjigaCombo.Size = new System.Drawing.Size(121, 21);
-            this.KnjigaCombo.TabIndex = 2;
             // 
             // VracanjeCheck
             // 
@@ -90,19 +75,42 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Knjiga";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(65, 109);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // textBoxKorisnik
+            // 
+            this.textBoxKorisnik.Location = new System.Drawing.Point(15, 28);
+            this.textBoxKorisnik.Name = "textBoxKorisnik";
+            this.textBoxKorisnik.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKorisnik.TabIndex = 7;
+            // 
+            // textBoxKnjiga
+            // 
+            this.textBoxKnjiga.Location = new System.Drawing.Point(16, 72);
+            this.textBoxKnjiga.Name = "textBoxKnjiga";
+            this.textBoxKnjiga.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKnjiga.TabIndex = 8;
+            // 
             // PosudbaVracanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(272, 104);
+            this.Controls.Add(this.textBoxKnjiga);
+            this.Controls.Add(this.textBoxKorisnik);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.VracanjeCheck);
-            this.Controls.Add(this.KnjigaCombo);
-            this.Controls.Add(this.KorisnikCombo);
             this.Controls.Add(this.ZavrsiButun);
             this.Name = "PosudbaVracanje";
             this.Text = "PosudbaVracanje";
+            this.Load += new System.EventHandler(this.PosudbaVracanje_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,10 +119,11 @@
         #endregion
 
         private System.Windows.Forms.Button ZavrsiButun;
-        private System.Windows.Forms.ComboBox KorisnikCombo;
-        private System.Windows.Forms.ComboBox KnjigaCombo;
         private System.Windows.Forms.CheckBox VracanjeCheck;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxKorisnik;
+        private System.Windows.Forms.TextBox textBoxKnjiga;
     }
 }

@@ -42,14 +42,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(286, 145);
+            this.textBox1.Location = new System.Drawing.Point(351, 146);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
             // PretragaButun
             // 
-            this.PretragaButun.Location = new System.Drawing.Point(286, 193);
+            this.PretragaButun.Location = new System.Drawing.Point(351, 194);
             this.PretragaButun.Name = "PretragaButun";
             this.PretragaButun.Size = new System.Drawing.Size(100, 23);
             this.PretragaButun.TabIndex = 2;
@@ -59,21 +59,21 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(286, 20);
+            this.textBox2.Location = new System.Drawing.Point(351, 21);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(286, 59);
+            this.textBox3.Location = new System.Drawing.Point(351, 60);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(286, 102);
+            this.textBox4.Location = new System.Drawing.Point(351, 103);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 5;
@@ -82,14 +82,14 @@
             // 
             this.PretragaRichTextbox.Location = new System.Drawing.Point(12, 21);
             this.PretragaRichTextbox.Name = "PretragaRichTextbox";
-            this.PretragaRichTextbox.Size = new System.Drawing.Size(268, 196);
+            this.PretragaRichTextbox.Size = new System.Drawing.Size(330, 196);
             this.PretragaRichTextbox.TabIndex = 6;
             this.PretragaRichTextbox.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(283, 4);
+            this.label1.Location = new System.Drawing.Point(348, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 7;
@@ -98,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(283, 43);
+            this.label2.Location = new System.Drawing.Point(348, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 8;
@@ -107,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(286, 86);
+            this.label3.Location = new System.Drawing.Point(351, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 9;
@@ -116,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(289, 129);
+            this.label4.Location = new System.Drawing.Point(354, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 13);
             this.label4.TabIndex = 10;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 275);
+            this.ClientSize = new System.Drawing.Size(463, 237);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

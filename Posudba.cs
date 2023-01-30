@@ -8,10 +8,8 @@ namespace AplikacijaZaBiblioteku
 {
     internal class Posudba
     {
-        DateTime datum_posudbe { get; set; }
-        DateTime datum_vracanja { get; set; }
-        int ID_knjige { get; set; }
-        int ID_korisnika { get; set; }
+        DateTime datum_posudbe, datum_vracanja;
+        int ID_knjige, ID_korisnika;
 
         public Posudba(DateTime datum_posudbe, DateTime datum_vracanja, int iD_knjige, int iD_korisnika)
         {
@@ -20,5 +18,10 @@ namespace AplikacijaZaBiblioteku
             ID_knjige = iD_knjige;
             ID_korisnika = iD_korisnika;
         }
+
+        public DateTime Datum_posudbe { get => datum_posudbe; set => datum_posudbe = value; }
+        public DateTime Datum_vracanja { get => datum_vracanja; set => datum_vracanja = value; }
+        public int ID_knjige1 { get => ID_knjige; set => ID_knjige = value; }
+        public int ID_korisnika1 { get => ID_korisnika; set => ID_korisnika = value; }
     }
 }
