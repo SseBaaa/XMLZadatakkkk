@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Libreno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Libreno.Designer.cs">
+      <DependentUpon>Libreno.cs</DependentUpon>
     </Compile>
     <Compile Include="Knjige.cs" />
     <Compile Include="Korisnici.cs" />
@@ -81,8 +81,8 @@
     <Compile Include="UpisKorisnika.Designer.cs">
       <DependentUpon>UpisKorisnika.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Libreno.resx">
+      <DependentUpon>Libreno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PosudbaVracanje.resx">
       <DependentUpon>PosudbaVracanje.cs</DependentUpon>

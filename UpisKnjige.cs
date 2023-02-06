@@ -73,5 +73,10 @@ namespace AplikacijaZaBiblioteku
             textBoxNaziv.Text = "";
             textBoxAutor.Text = "";
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,9 +13,9 @@ using System.Collections;
 
 namespace AplikacijaZaBiblioteku
 {
-    public partial class Form1 : Form
+    public partial class Libreno : Form
     {
-        public Form1()
+        public Libreno()
         {
             if (!Directory.Exists(Environment.SpecialFolder.MyDocuments + "Knjige.xml"))
             {

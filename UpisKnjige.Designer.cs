@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpisKnjige));
             this.UnosButun = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -116,21 +117,24 @@
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(52, 12);
+            this.textBoxID.BackColor = System.Drawing.Color.SkyBlue;
+            this.textBoxID.Location = new System.Drawing.Point(107, 18);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(100, 20);
             this.textBoxID.TabIndex = 0;
             // 
             // textBoxNaziv
             // 
-            this.textBoxNaziv.Location = new System.Drawing.Point(52, 51);
+            this.textBoxNaziv.BackColor = System.Drawing.Color.SkyBlue;
+            this.textBoxNaziv.Location = new System.Drawing.Point(107, 57);
             this.textBoxNaziv.Name = "textBoxNaziv";
             this.textBoxNaziv.Size = new System.Drawing.Size(100, 20);
             this.textBoxNaziv.TabIndex = 1;
             // 
             // textBoxAutor
             // 
-            this.textBoxAutor.Location = new System.Drawing.Point(52, 95);
+            this.textBoxAutor.BackColor = System.Drawing.Color.SkyBlue;
+            this.textBoxAutor.Location = new System.Drawing.Point(107, 101);
             this.textBoxAutor.Name = "textBoxAutor";
             this.textBoxAutor.Size = new System.Drawing.Size(100, 20);
             this.textBoxAutor.TabIndex = 2;
@@ -138,43 +142,50 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 13);
+            this.label4.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(57, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.Size = new System.Drawing.Size(21, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "ID";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 58);
+            this.label5.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(57, 57);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(40, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Naziv";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 102);
+            this.label6.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(57, 101);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.Size = new System.Drawing.Size(44, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Autor";
             // 
             // buttonUnesi
             // 
-            this.buttonUnesi.Location = new System.Drawing.Point(52, 143);
+            this.buttonUnesi.BackColor = System.Drawing.Color.SkyBlue;
+            this.buttonUnesi.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUnesi.Location = new System.Drawing.Point(107, 149);
             this.buttonUnesi.Name = "buttonUnesi";
             this.buttonUnesi.Size = new System.Drawing.Size(100, 23);
             this.buttonUnesi.TabIndex = 6;
             this.buttonUnesi.Text = "Unesi";
-            this.buttonUnesi.UseVisualStyleBackColor = true;
+            this.buttonUnesi.UseVisualStyleBackColor = false;
             this.buttonUnesi.Click += new System.EventHandler(this.buttonUnesi_Click);
             // 
             // UpisKnjige
             // 
-            this.ClientSize = new System.Drawing.Size(169, 184);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(296, 184);
             this.Controls.Add(this.buttonUnesi);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -182,7 +193,9 @@
             this.Controls.Add(this.textBoxAutor);
             this.Controls.Add(this.textBoxNaziv);
             this.Controls.Add(this.textBoxID);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UpisKnjige";
+            this.Text = "Libreno - Upis knjiga";
             this.Load += new System.EventHandler(this.UpisKnjige_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
